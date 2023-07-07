@@ -1,5 +1,1 @@
-# gvsmothish_mtech_thesis
-
-
-
-# I am mothi
+# This page contains my masters thesis
