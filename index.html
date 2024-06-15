@@ -108,8 +108,6 @@
     </div>
   </div>
 </section> -->
-
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -123,12 +121,34 @@
         <div class="item item-steve">
           <img src="./static/images/Master%20Assembly%20(Exploded%20View).jpg" width="100%" alt="Stoch Lab Logo"/>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/biro_1.mp4" 
-                    type="video/mp4">
-          </video>
+        <div class="item item-steve">
+          <img src="./static/images/Stoch_BiRo_Rendered.png" width="100%" alt="Stoch Lab Logo"/>
         </div>
+        <div class="item item-steve">
+          <img src="./static/images/main_image.jpeg" width="100%" alt="Stoch Lab Logo"/>
+        </div>
+        <div class="item item-steve">
+          <img src="./static/images/Master%20Assembly%20(Exploded%20View).jpg" width="100%" alt="Stoch Lab Logo"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+    <div class="column is-8">
+      <div class="column">
+        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+          <source src="./static/videos/biro_1.mp4" 
+                  type="video/mp4">
+        </video>
+        <br>
+        <h2 class="subtitle has-text-centered">
+          Preparation of Hardware Testbed <strong>
+        </h2>
+      </div>
       </div>
     </div>
   </div>
@@ -173,17 +193,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper introduces the Stoch BiRo, a cost-effective bipedal robot designed with a modular mechanical 
-            structure having point feet to navigate uneven and unfamiliar terrains. The robot employs proprioceptive 
-            actuation in abduction, hips, and knees, leveraging a Raspberry Pi4 for control. Overcoming computational 
-            limitations, a Learning-based Linear Policy controller manages balance and locomotion with only 3 degrees of 
-            freedom (DoF) per leg, distinct from the typical 5DoF in bipedal systems. Integrated within a modular control 
-            architecture, these controllers enable autonomous handling of unforeseen terrain disturbances without external 
-            sensors or prior environment knowledge. Demonstrating efficiency through low Cost of Transport (CoT) across 
-            varying walking speeds and blind stair climbing, the robot's policies are trained and simulated using MuJoCo, 
-            transferring learned behaviors to the Stoch BiRo hardware for initial walking validations. This work highlights 
-            the Stoch BiRo's adaptability and cost-effectiveness in mechanical design, control strategies, and autonomous 
-            navigation, promising diverse applications in real-world robotics scenarios.
+            This work introduces the design, manufacturing
+and development of Hardware and Controller for Bipedal Robot
+named Stoch BiRo. We have divided the project into 3 phases. In
+Phase 1, a cost-effective bipedal robot designed with a modular
+mechanical structure having point feet to navigate uneven and
+unfamiliar terrains. The robot employs proprioceptive actuation
+in abduction, hips, and knees, leveraging a Raspberry Pi4 for
+control. For ensuring hardware functionality and establishing
+the pipeline, In the Phase 2, we have implemented a Learning-
+based Linear Policy controller manages balance and locomo-
+tion with only 3 degrees of freedom (DoF) per leg, distinct
+from the typical 5DoF in bipedal systems. Integrated within
+a modular control architecture, these controllers enable au-
+tonomous handling of unforeseen terrain disturbances without
+external sensors or prior environment knowledge. In Phase
+3, Deep Reinforcement Learning based approach is used to
+achieve robust walking and Finally a Diffusion Model Based
+Policy is developed to generate trajectories of the bipedal
+robot. This work highlights the Stoch BiRo’s adaptability and
+cost-effectiveness in mechanical design, control strategies, and
+autonomous navigation, promising diverse applications in real-
+world robotics scenarios.
           </p>
         </div>
       </div>
@@ -197,7 +228,7 @@
     <!--/ Method. -->
    <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">Design Overview</h2>
+        <h2 class="title is-3">Design Overview (Phase 1)</h2>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
@@ -257,7 +288,7 @@
     
     <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">Control Architecture</h2>
+        <h2 class="title is-3">Control Architecture (Phase 2)</h2>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
@@ -281,7 +312,7 @@
     </div>
     <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">MuJoCo Simulations & Results</h2>
+        <h2 class="title is-3">MuJoCo Simulations & Results (Phase 1 and 2)</h2>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
@@ -295,6 +326,12 @@
           
       </div>
     </div>
+    <div class="column is-four-fifths">
+         <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RK8SCQpDTPE" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>
     <div class="columns is-centered has-text-justified">
       <div class="column">
         <p>
@@ -302,18 +339,62 @@
         </p>
       </div>
     </div>
-    
-  <div class="columns is-centered has-text-left">
+
+
+    <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Diffusion Policy Architecture (Phase 3)</h2>
       </div>
     </div>
-        <div class="column is-four-fifths">
+    <div class="columns is-centered has-text-justified">
+      <div class="column">
+        <p>
+          
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-8">
+        <img src="./static/images/diff_archi.png" alt="teaser" class="teaser-image">
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column">
+        <p>
+          
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-left">
+      <div class="column">
+        <h2 class="title is-3">Issac Gym Simulations & Results (Phase 3)</h2>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-8">
+        <p>
+          
+        </p>
+        <br>
+        <img src="./static/images/Sim_res.jpg" alt="results" class="teaser-image" height=80% width=80%>
+        <img src="./static/images/results.png" alt="results" class="teaser-image" height=95% width=95%><br>
+          
+      </div>
+    </div>
+    <div class="column is-four-fifths">
          <div class="publication-video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/RK8SCQpDTPE" 
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
         </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column">
+        <p>
+          
+        </p>
       </div>
+    </div>
+        
 
 </section>
 
@@ -321,30 +402,32 @@
 </section>
 
 
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-    <td style="padding:0px">
-      <br>
-      <p style="text-align:right;font-size:small;">
-      <a href="https://github.com/jonbarron/jonbarron_website"> Template is inspired by this</a>.
-      </p>
-    </td>
-  </tr>
-</tbody></table>
-<!-- <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
+      <!-- <a class="icon-link"
          href="./static/paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/tayalmanan28" class="external-link" disabled>
         <i class="fab fa-github"></i>
-      </a>
+      </a> -->
+      I would like to Thank My Research Advisor  Dr. Shishir Kolataya, My other Advisors, Dr. Punit Rathore, Dr. Pradipta Biswas.
+      And other contributors of this work, Manan Tayal, Karthik Rajgopal, Ravi Kola, Suraj Kumar, Aditya Sagi. I would also like to thank ARTPARK for funding this project.
     </div>
   </div>
-</footer> -->
+</footer>
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr>
+    <td style="padding:0px">
+      <br>
+      <p style="text-align:right;font-size:small;">
+      <a href="https://github.com/jonbarron/jonbarron_website"> Template is inspired by this Repository</a>.
+      </p>
+    </td>
+  </tr>
+</tbody></table>
+
 
 </body>
 </html>
