@@ -6,8 +6,8 @@
         content="Design and Control of a low-cost bipedal robot">
   <meta name="keywords" content="Stoch-BiRo, Open sourced, Biped">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Design, Development and Robust locomotion of Bipedal walking robot with
-    learning based techniques</title>
+  <title>Diffusion Policy Based walking Controller for Bipedal Robot (Stoch-Biro)
+in Unseen environments with latent space observations</title>
 
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -38,24 +38,26 @@
       <div class="columns is-centered">
         
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Design, Development and Robust locomotion of Bipedal walking robot with
-            learning based techniques</h1>
+          <h1 class="title is-1 publication-title">Diffusion Policy Based walking Controller for Bipedal Robot (Stoch-Biro)
+in Unseen environments with latent space observations</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://gvsmothish.github.io/">GVS Mothish</a> ,</span>
+            <span class="author-block">
+              <a href="https://tayalmanan28.github.io/">Manan Tayal</a> ,</span>
             <span class="author-block">
               <a href="https://www.shishirny.com/">Dr. Shishir Kolataya</a>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">M.Tech Robotics and Autonomous Systems (2022-2024)</span> <br>
+            <span class="author-block">Robert Bosch Centre for Cyber Physical Systems</span>, <br>
             <span class="author-block">Indian Institute of Science, Bangalore</span>
           </div>
 
-          <div class="column has-text-centered">
+          
+          <!-- <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2312.06512"
                    class="external-link button is-normal is-rounded is-dark">
@@ -65,7 +67,6 @@
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=RK8SCQpDTPE"
                    class="external-link button is-normal is-rounded is-dark">
@@ -75,18 +76,10 @@
                   <span>Video (Phase 1 & 2)</span>
                 </a>
               </span>
-              <!-- Design files Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/StochLab/Stoch-BiRo-Biped-Design"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fa fa-cogs"></i>
-                  </span>
-                  <span>Design Files</span>
-                  </a> -->
             </div>
+          </div> -->
 
-          </div>
+
         </div>
       </div>
     </div>
@@ -108,7 +101,7 @@
     </div>
   </div>
 </section> -->
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -116,9 +109,6 @@
           <img src="./static/images/Stoch_BiRo_Rendered.png" width="100%" alt="Stoch Lab Logo"/>
         </div>
         <div class="item item-steve">
-          <img src="./static/images/main_image.jpeg" width="100%" alt="Stoch Lab Logo"/>
-        </div>
-        <div class="item item-steve">
           <img src="./static/images/Master%20Assembly%20(Exploded%20View).jpg" width="100%" alt="Stoch Lab Logo"/>
         </div>
         <div class="item item-steve">
@@ -133,28 +123,31 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-    <div class="column is-8">
-      <div class="column">
-        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-          <source src="./static/videos/biro_1.mp4" 
-                  type="video/mp4">
-        </video>
+      <div class="column is-8">
+        <div class="columns">
+          <div class="column">
+            <img src="./static/images/Master%20Assembly%20(Exploded%20View).jpg" width="100%" alt="exploded"/>
+          </div>
+          <div class="column">
+            <img src="./static/images/Stoch_BiRo_Rendered.png" width="100%" alt="cad_rendered"/>
+          </div>
+        </div>
         <br>
         <h2 class="subtitle has-text-centered">
-          Preparation of Hardware Testbed <strong>
+          CAD Assembly of Stoch BiRo <strong>
         </h2>
-      </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="hero">
+
+<!-- <section class="hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
     <div class="column is-8">
@@ -170,7 +163,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -193,28 +186,23 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This work introduces the design, manufacturing
-and development of Hardware and Controller for Bipedal Robot
-named Stoch BiRo. We have divided the project into 3 phases. In
-Phase 1, a cost-effective bipedal robot designed with a modular
-mechanical structure having point feet to navigate uneven and
-unfamiliar terrains. The robot employs proprioceptive actuation
-in abduction, hips, and knees, leveraging a Raspberry Pi4 for
-control. For ensuring hardware functionality and establishing
-the pipeline, In the Phase 2, we have implemented a Learning-
-based Linear Policy controller manages balance and locomo-
-tion with only 3 degrees of freedom (DoF) per leg, distinct
-from the typical 5DoF in bipedal systems. Integrated within
-a modular control architecture, these controllers enable au-
-tonomous handling of unforeseen terrain disturbances without
-external sensors or prior environment knowledge. In Phase
-3, Deep Reinforcement Learning based approach is used to
-achieve robust walking and Finally a Diffusion Model Based
-Policy is developed to generate trajectories of the bipedal
-robot. This work highlights the Stoch BiRo’s adaptability and
-cost-effectiveness in mechanical design, control strategies, and
-autonomous navigation, promising diverse applications in real-
-world robotics scenarios.
+             Bipedal Robot control in lower level is often a
+problem which requires the controller, which runs at high
+frequency. This limits the use of heavy networks like GANs,
+Diffusion Models and other generative models which runs with
+high compute. We have designed a Real time Robot controller
+based on Diffusion Models, which not only powerful enough to
+capture multiple behaviours with different velocities in single
+policy, but also generalizes well for unseen environments. Our
+controller is based on learning with offline Data which is better
+than online learning in some aspects like scalability, simpler
+training scheme etc. We have Designed and implemented a
+diffusion model based policy controller on our custom made
+Bipedal Robot model named ”Stoch Biro” [1] in simulation.
+This robot has 6 controllable degrees of freedom with position
+control. We also demonstrated its generalization capability
+and high frequency control step generation relative to typical
+generative models which requires huge on boarding compute.
           </p>
         </div>
       </div>
@@ -228,110 +216,48 @@ world robotics scenarios.
     <!--/ Method. -->
    <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">Design Overview (Phase 1)</h2>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          Stoch BiRo's design can be understood as an assembly of a central body module(torso) and two identical legs with three degrees of freedom in each leg. The torso consists of two L-shaped aluminum plates bolted together, along with electronic components, cable routing, and a power distribution board. Each leg has three actuator modules: hip abduction/adduction, hip flexion/extension, and knee flexion/extension, with a shank attached at the end. All the modules consist of a brushless DC motor (T-MotorAntigravity MN5006 KV300) coupled to dual-stage HTD timing belt actuation with a 3:1 reduction at each stage, resulting in an overall multiplication of 9 times the torque motor has to offer.
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          <strong>Abduction Module:</strong>  The abduction module, as shown in below Fig, is the topmost module of a leg in the biped, which is responsible for the abduction/adduction movement in the frontal plane of the robot's hip, similar to that of humans. The module is attached to the torso plate and actuates the hip abduction-flexion coupling through the timing belts-pulleys system. This coupling is a part of the abduction joint, which connects the abduction and the flexion modules.
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          <strong> Hip Flexion Module: </strong> The hip flexion module (refer to Fig. \ref{hip}) is placed between the hip abduction and thigh modules. This module is mostly identical to that of the abduction module with few changes as it performs the flexion-extension motion in the sagittal plane. The hip-to-hip attachment in this module facilitates the transfer of actuation from the abduction motor. The output pulley is connected to a flexion-thigh coupling, forming the flexion joint, which connects the flexion and thigh modules.
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          <strong> Thigh Module: </strong> The thigh module (illustrated in Fig. \ref{thigh}) is responsible for the knee flexion/extension of the biped, similar to the primary movement of human knees. The motor in this module controls the knee joint through the thigh-shank coupling. The output pulley is attached to this coupling and the motion is transmitted to the shank module. Unlike the previous two modules which had a triangular configuration, the belts of this module are arranged linearly.
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          <strong> Shank: </strong> Shank is the lowest part of the biped leg, which runs from the knee to the foot. This module is similar to the structure of the thigh but without any of the actuating components (motors, belts, pulleys, etc.) and with a provision for foot attachment at its bottom end. A point contact foot made of polyurethane (PU) is attached to the end of the shank for better grip of the biped when in contact with a surface.
-        </p>
+        <h2 class="title is-3">Architecture of Diffusion Policy</h2>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
       <div class="column is-8">
-        <img src="./static/images/Master%20Assembly.jpg" alt="teaser" class="teaser-image" width=80% height=80%>
+        <img src="./static/images/diff_archi.png" alt="teaser" class="teaser-image" width=120% height=120%>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
       <div class="column is-8">
-        <img src="./static/images/motorspecs.png" alt="teaser" class="teaser-image" width=80% height=80%>
+        <img src="./static/images/algo_params.png" alt="teaser" class="teaser-image" width=80% height=80%>
+      </div>
+    </div>
+    
+    
+    <div class="columns is-centered has-text-left">
+      <div class="column">
+        <h2 class="title is-3">Algorithms</h2>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          <h2 class="subtitle has-text-centered">
-      For further design details and access to files, refer to <strong><a href="https://github.com/StochLab/Stoch-BiRo-Biped-Design">Design Repository</a></strong>
-        </h2>
-        </p>
+      <div class="column is-8">
+        <img src="./static/images/algo_1.png" alt="teaser" class="teaser-image" width=80% height=80%>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-8">
+        <img src="./static/images/algo_2.png" alt="teaser" class="teaser-image" width=80% height=80%>
       </div>
     </div>
     
     <div class="columns is-centered has-text-left">
       <div class="column">
-        <h2 class="title is-3">Control Architecture (Phase 2)</h2>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column is-8">
-        <img src="./static/images/control_framework.png" alt="teaser" class="teaser-image">
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column">
-        <p>
-          
-        </p>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-left">
-      <div class="column">
-        <h2 class="title is-3">MuJoCo Simulations & Results (Phase 1 and 2)</h2>
-      </div>
-    </div>
-    <div class="columns is-centered has-text-justified">
-      <div class="column is-8">
-        <p>
-          
-        </p>
-        <br>
-        <img src="./static/images/Sim_res.jpg" alt="results" class="teaser-image" height=80% width=80%>
-        <img src="./static/images/results.png" alt="results" class="teaser-image" height=95% width=95%><br>
-          
+        <h2 class="title is-3">Simulations & Results</h2>
       </div>
     </div>
     <div class="column is-four-fifths">
-         <div class="publication-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RK8SCQpDTPE" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
+      <div class="publication-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PqnTGGYhHdE" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
     <div class="columns is-centered has-text-justified">
       <div class="column">
         <p>
@@ -341,7 +267,7 @@ world robotics scenarios.
     </div>
 
 
-    <div class="columns is-centered has-text-left">
+    <!-- <div class="columns is-centered has-text-left">
       <div class="column">
         <h2 class="title is-3">Diffusion Policy Architecture (Phase 3)</h2>
       </div>
@@ -382,18 +308,18 @@ world robotics scenarios.
       </div>
     </div>
     <div class="column is-four-fifths">
-         <div class="publication-video">
+        <div class="publication-video">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/RK8SCQpDTPE" 
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
         </div>
+    </div>
     <div class="columns is-centered has-text-justified">
       <div class="column">
         <p>
           
         </p>
       </div>
-    </div>
+    </div> -->
         
 
 </section>
@@ -412,8 +338,7 @@ world robotics scenarios.
       <a class="icon-link" href="https://github.com/tayalmanan28" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a> -->
-      I would like to Thank My Research Advisor  Dr. Shishir Kolataya, My other Advisors, Dr. Punit Rathore, Dr. Pradipta Biswas.
-      And other contributors of this work, Manan Tayal, Karthik Rajgopal, Ravi Kola, Suraj Kumar, Aditya Sagi. I would also like to thank ARTPARK for funding this project.
+      This work is submittted to ICC 2024
     </div>
   </div>
 </footer>
