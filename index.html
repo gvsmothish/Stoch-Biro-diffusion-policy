@@ -6,8 +6,7 @@
         content="Design and Control of a low-cost bipedal robot">
   <meta name="keywords" content="Stoch-BiRo, Open sourced, Biped">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Diffusion Policy Based walking Controller for Bipedal Robot (Stoch-Biro)
-in Unseen environments with latent space observations</title>
+  <title>BiRoDiff: Diffusion policies for bipedal robot locomotion on unseen terrains</title>
 
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
@@ -186,23 +185,22 @@ in Unseen environments with latent space observations</h1>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-             Bipedal Robot control in lower level is often a
-problem which requires the controller, which runs at high
-frequency. This limits the use of heavy networks like GANs,
-Diffusion Models and other generative models which runs with
-high compute. We have designed a Real time Robot controller
-based on Diffusion Models, which not only powerful enough to
-capture multiple behaviours with different velocities in single
-policy, but also generalizes well for unseen environments. Our
-controller is based on learning with offline Data which is better
-than online learning in some aspects like scalability, simpler
-training scheme etc. We have Designed and implemented a
-diffusion model based policy controller on our custom made
-Bipedal Robot model named ”Stoch Biro” [1] in simulation.
-This robot has 6 controllable degrees of freedom with position
-control. We also demonstrated its generalization capability
+             Locomotion on unknown terrains is essential for
+bipedal robots to handle novel real-world challenges, thus
+expanding their utility in disaster response and exploration. In
+this work, we introduce a lightweight framework that learns
+a single walking controller that yields locomotion on multiple
+terrains. We have designed a real-time robot controller based on
+diffusion models, which not only captures multiple behaviours
+with different velocities in a single policy but also generalizes
+well for unseen terrains. Our controller learns with offline
+data, which is better than online learning in aspects like
+scalability, simplicity in training scheme etc. We have designed
+and implemented a diffusion model-based policy controller in
+simulation on our custom-made Bipedal Robot model named
+Stoch BiRo. We have demonstrated its generalization capability
 and high frequency control step generation relative to typical
-generative models which requires huge on boarding compute.
+generative models, which require huge onboarding compute.
           </p>
         </div>
       </div>
